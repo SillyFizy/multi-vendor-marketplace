@@ -25,8 +25,8 @@
                alt="">
           <transition name="slide-fade">
             <div
-                class="absolute bg-[#a1a1a1] rounded-lg w-64 sm:w-80 lg:w-96 h-52 sm:h-72 lg:h-80 overflow-x-scroll top-16 right-14 min-[500px]:right-16 sm:right-20 lg:right-48 xl:right-52 shadow-lg shadow-gray-600"
-                v-if="isCart">
+                class="absolute bg-[#a5a4a4] rounded-lg w-64 sm:w-80 lg:w-96 h-52 sm:h-72 lg:h-80 overflow-x-scroll top-16 right-14 min-[500px]:right-16 sm:right-20 lg:right-48 xl:right-52 shadow-lg shadow-[#9b9a9a]"
+                v-if="isCart" ref="cart">
               <div class="flex flex-col items-center w-full">
                 <div class="w-11/12 h-24 bg-red-700 my-1 rounded-2xl">
 
@@ -39,8 +39,8 @@
           <img @click="isUserOpen" class="w-15 sm:w-12 cursor-pointer relative" src="../assets/user-circle.svg" alt="">
           <transition name="slide-fade">
             <div
-                class="absolute bg-[#a1a1a1] rounded-lg w-40 sm:w-80 lg:w-96 h-40 sm:h-72 lg:h-80 overflow-x-scroll top-16 right-6 min-[500px]:right-16 sm:right-20 lg:right-48 xl:right-52 shadow-lg shadow-gray-600"
-                v-if="isUser">
+                class="absolute bg-[#a5a4a4] rounded-lg w-40 sm:w-44 lg:w-48 h-40 sm:h-44 lg:h-48 overflow-x-scroll top-16 right-6 min-[500px]:right-6 sm:right-6 lg:right-36 min-[1164px]:right-40 xl:right-48 shadow-lg shadow-[#9b9a9a]"
+                v-if="isUser" ref="user">
               <div class="flex flex-col items-center justify-center h-full w-full">
                 <Button class="bg-[#6f6f6f] hover:bg-[#3c3c3c] text-white">Sign In</Button>
                 <p>Or</p>
@@ -54,12 +54,20 @@
   </header>
 </template>
 <script setup>
-import {computed, ref} from "vue";
+import {computed, onMounted, ref} from "vue";
 import Button from "./Button.vue";
+import vClickOutside from "v-click-outside"
+import {onClickOutside} from "@vueuse/core";
 
 const windowWidth = ref(window.innerWidth);
 const isCart = ref(false);
 const isUser = ref(false);
+
+const cart = ref(null);
+const user = ref(null);
+
+
+
 
 window.addEventListener('resize', () => {
   windowWidth.value = window.innerWidth
@@ -78,5 +86,11 @@ const isUserOpen = () => {
   return isUser.value = !isUser.value;
 }
 
+onClickOutside(user, event => {
+  isUser.value = false;
+})
+onClickOutside(cart, event => {
+  isCart.value = false;
+})
 </script>
 
