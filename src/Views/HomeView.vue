@@ -1,9 +1,9 @@
 <template>
   <section>
-    <Carousel :autoplay="5000" :wrap-around="true" class="w-screen h-1/2 md:bg-[#eb5f28d7] shadow-inner ">
+    <Carousel :autoplay="5000" :wrap-around="true" class="w-screen h-1/2 shadow-inner ">
       <Slide v-for="img in images" :key="img" class="h-full w-full">
         <img :src="img.url"
-             class="w-full md:w-3/4 lg:w-1/2 h-full md:h-3/4 lg:h-1/2 flex justify-center items-center m-2 mt-3 mb-0 rounded-lg"
+             class="max-w-full md:h-1/4 lg:h-[636px] flex justify-center items-center"
              :alt="img.alt">
       </Slide>
       <template #addons>
@@ -25,5 +25,6 @@ const images = ref([
   {url: "/src/assets/slide-demo-2.jpg", alt: "Some random shit"},
   {url: "/src/assets/slide-demo-3.jpg", alt: "Some random shit"},
   {url: "/src/assets/slide-demo-4.jpg", alt: "Some random shit"},
+  {url: "/src/assets/slide-demo-5.jpg", alt: "Some random shit"},
 ])
 </script>
