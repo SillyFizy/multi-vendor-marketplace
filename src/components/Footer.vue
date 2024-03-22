@@ -1,47 +1,45 @@
 <template>
-  <footer class="flex items-center justify-center max-w-full relative h-[633px] bg-[#EB5E28] m-2 mb-0 rounded-t-lg mt-80 p-4">
-    <div class="w-[90%] flex justify-center items-center bg-[#FFFFFF] absolute -top-48 rounded-lg p-6 ">
-      <div class="flex flex-col justify-center items-start w-full gap-5  ">
-        <div class="flex justify-center items-center gap-2">
-          <img src="../assets/logo.svg" class="w-[45px] h-[45px]" alt="">
-          <h1 id="siteName" class="text-2xl sm:text-3xl ms-1 sm:ms-2"><span class="text-[#EB5E28]">PC</span> HUB</h1>
-        </div>
-          <div class="flex flex-col w-full self-center items-center justify-center md:">
-            <div class="w-10/12 ">
-          <div class="flex flex-col self-baseline gap-2 font-semibold md:place-self-end">
-            <h3 class="text-[18px] text-[#EB5E28]">Information</h3>
-            <p class="text-[14px] cursor-pointer transition-all ease-in hover:text-[#EB5E28]">About Us</p>
-            <p class="text-[14px] cursor-pointer transition-all ease-in hover:text-[#EB5E28]">More Search</p>
-            <p class="text-[14px] cursor-pointer transition-all ease-in hover:text-[#EB5E28]">Testimonials</p>
-            <p class="text-[14px] cursor-pointer transition-all ease-in hover:text-[#EB5E28]">Events</p>
+  <footer class="flex items-center justify-center max-w-full  relative h-[633px] md:h-[425px] bg-[#EB5E28] m-2 mb-0 rounded-t-lg mt-80 p-4">
+    <div class="w-[90%] md:w-[95%] 2xl:w-[93%] flex justify-center items-center bg-[#FFFFFF] absolute -top-48 md:-top-20 lg:-top-40 rounded-lg p-6 xl:pt-24">
+      <div class="flex flex-col justify-center items-start w-full gap-5 2xl:mx-20 ">
+        <div class="flex flex-col w-full self-center items-center gap-4 justify-center md:flex-row md:justify-between">
+          <div class="flex justify-center items-center self-start gap-2 md:w-5/6 lg:w-4/6 2xl:w-1/6">
+            <img src="../assets/logo.svg" class="w-[45px] h-[45px] lg:w-[65px] lg:h-[65px]" alt="">
+            <h1 id="siteName" class="text-2xl sm:text-3xl lg:text-4xl ms-1 sm:ms-2"><span class="text-[#EB5E28]">PC</span> HUB</h1>
           </div>
-          <div class="flex flex-col self-baseline gap-2 font-semibold">
-            <h3 class="text-[18px] text-[#EB5E28]">Helpful Links</h3>
-            <p class="text-[14px] cursor-pointer transition-all ease-in hover:text-[#EB5E28]">Services</p>
-            <p class="text-[14px] cursor-pointer transition-all ease-in hover:text-[#EB5E28]">Supports</p>
-            <p class="text-[14px] cursor-pointer transition-all ease-in hover:text-[#EB5E28]">Terms & Condition</p>
-            <p class="text-[14px] cursor-pointer transition-all ease-in hover:text-[#EB5E28]">Privacy Policy</p>
+          <div class="flex flex-col w-10/12 self-center gap-2 font-semibold md:w-1/4 lg:w-2/6 2xl:w-1/6">
+            <h3 class="text-[18px] lg:text-[20px] text-[#EB5E28]">Information</h3>
+            <p class="text-[14px] lg:text-[16px] cursor-pointer transition-all ease-in hover:text-[#EB5E28]">About Us</p>
+            <p class="text-[14px] lg:text-[16px] cursor-pointer transition-all ease-in hover:text-[#EB5E28]">More Search</p>
+            <p class="text-[14px] lg:text-[16px] cursor-pointer transition-all ease-in hover:text-[#EB5E28]">Testimonials</p>
+            <p class="text-[14px] lg:text-[16px] cursor-pointer transition-all ease-in hover:text-[#EB5E28]">Events</p>
           </div>
-        </div>
-        <div class="self-center flex flex-col items-center gap-4">
-          <h3 class="text-[#EB5E28] text-[20px]">Subscribe to our news letter</h3>
-          <div class="bg-[#CCC5B9] w-full h-[40px] flex justify-center items-center p-2 rounded-lg">
-            <div class="bg-white h-full flex items-center justify-center rounded-lg rounded-r-none px-2 py-3.5">
-              <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M14.8334 0.333496H3.16669C2.50365 0.333496 1.86776 0.596888 1.39892 1.06573C0.930079 1.53457 0.666687 2.17045 0.666687 2.8335V11.1668C0.666687 11.8299 0.930079 12.4658 1.39892 12.9346C1.86776 13.4034 2.50365 13.6668 3.16669 13.6668H14.8334C15.4964 13.6668 16.1323 13.4034 16.6011 12.9346C17.07 12.4658 17.3334 11.8299 17.3334 11.1668V2.8335C17.3334 2.17045 17.07 1.53457 16.6011 1.06573C16.1323 0.596888 15.4964 0.333496 14.8334 0.333496V0.333496ZM3.16669 2.00016H14.8334C15.0544 2.00016 15.2663 2.08796 15.4226 2.24424C15.5789 2.40052 15.6667 2.61248 15.6667 2.8335L9.00002 6.90016L2.33335 2.8335C2.33335 2.61248 2.42115 2.40052 2.57743 2.24424C2.73371 2.08796 2.94567 2.00016 3.16669 2.00016V2.00016ZM15.6667 11.1668C15.6667 11.3878 15.5789 11.5998 15.4226 11.7561C15.2663 11.9124 15.0544 12.0002 14.8334 12.0002H3.16669C2.94567 12.0002 2.73371 11.9124 2.57743 11.7561C2.42115 11.5998 2.33335 11.3878 2.33335 11.1668V4.7335L8.56669 8.54183C8.69337 8.61497 8.83707 8.65347 8.98335 8.65347C9.12963 8.65347 9.27334 8.61497 9.40002 8.54183L15.6667 4.7335V11.1668Z"
-                    fill="#6C6C6C" fill-opacity="0.7"/>
-              </svg>
+          <div class="flex flex-col w-10/12 self-center gap-2 font-semibold md:w-3/6 lg:w-2/6 2xl:w-1/6">
+            <h3 class="text-[18px] lg:text-[20px] text-[#EB5E28]">Helpful Links</h3>
+            <p class="text-[14px] lg:text-[16px] cursor-pointer transition-all ease-in hover:text-[#EB5E28]">Services</p>
+            <p class="text-[14px] lg:text-[16px] cursor-pointer transition-all ease-in hover:text-[#EB5E28]">Supports</p>
+            <p class="text-[14px] lg:text-[16px] cursor-pointer transition-all ease-in hover:text-[#EB5E28]">Terms & Condition</p>
+            <p class="text-[14px] lg:text-[16px] cursor-pointer transition-all ease-in hover:text-[#EB5E28]">Privacy Policy</p>
+          </div>
+          <div class="self-center flex flex-col items-center gap-4 md:w-4/6 lg:w-3/6 xl:w-2/6 2xl:w-1/6">
+            <h3 class="text-[#EB5E28] text-[20px] font-semibold lg:self-start ">Subscribe to our news letter</h3>
+            <div class="bg-[#CCC5B9] w-full h-[40px] flex justify-center items-center p-2 rounded-lg">
+              <div class="bg-white h-full flex items-center justify-center rounded-lg rounded-r-none px-2 py-3.5">
+                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                      d="M14.8334 0.333496H3.16669C2.50365 0.333496 1.86776 0.596888 1.39892 1.06573C0.930079 1.53457 0.666687 2.17045 0.666687 2.8335V11.1668C0.666687 11.8299 0.930079 12.4658 1.39892 12.9346C1.86776 13.4034 2.50365 13.6668 3.16669 13.6668H14.8334C15.4964 13.6668 16.1323 13.4034 16.6011 12.9346C17.07 12.4658 17.3334 11.8299 17.3334 11.1668V2.8335C17.3334 2.17045 17.07 1.53457 16.6011 1.06573C16.1323 0.596888 15.4964 0.333496 14.8334 0.333496V0.333496ZM3.16669 2.00016H14.8334C15.0544 2.00016 15.2663 2.08796 15.4226 2.24424C15.5789 2.40052 15.6667 2.61248 15.6667 2.8335L9.00002 6.90016L2.33335 2.8335C2.33335 2.61248 2.42115 2.40052 2.57743 2.24424C2.73371 2.08796 2.94567 2.00016 3.16669 2.00016V2.00016ZM15.6667 11.1668C15.6667 11.3878 15.5789 11.5998 15.4226 11.7561C15.2663 11.9124 15.0544 12.0002 14.8334 12.0002H3.16669C2.94567 12.0002 2.73371 11.9124 2.57743 11.7561C2.42115 11.5998 2.33335 11.3878 2.33335 11.1668V4.7335L8.56669 8.54183C8.69337 8.61497 8.83707 8.65347 8.98335 8.65347C9.12963 8.65347 9.27334 8.61497 9.40002 8.54183L15.6667 4.7335V11.1668Z"
+                      fill="#6C6C6C" fill-opacity="0.7"/>
+                </svg>
+              </div>
+              <input placeholder="Enter your Email" class="w-full p-[2px] rounded-md rounded-l-none outline-none">
             </div>
-            <input placeholder="Enter your Email" class="w-full p-[2px] rounded-md rounded-l-none outline-none">
+            <Button class="py-1 px-8 bg-[#403D39] lg:self-start transition-all ease-in hover:bg-[#2C2A27] text-white font-medium">
+              Subscribe
+            </Button>
           </div>
-          <Button class="py-1 px-8 bg-[#403D39] transition-all ease-in hover:bg-[#2C2A27] text-white font-medium">
-            Subscribe
-          </Button>
         </div>
-          </div>
-        <div class="self-center w-10/12">
-          <div class="flex flex-col self-baseline gap-3 font-semibold">
+        <div class="flex self-center lg:self-start lg:ms-7 xl:ms-32 w-10/12 lg:w-1/2">
+          <div class="flex flex-col self-baseline lg:self-center gap-3 font-semibold">
             <h3 class="text-[18px] text-[#EB5E28]">Contact Us</h3>
             <div class="flex gap-4 items-center">
               <svg width="18" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +47,7 @@
                     d="M11.6054 7.39431C11.4625 7.39431 11.3132 7.34885 11.1703 7.31638C10.8812 7.25173 10.5969 7.16711 10.3195 7.0631C10.0183 6.9535 9.6871 6.95919 9.38976 7.07908C9.09243 7.19898 8.84994 7.4246 8.70896 7.71253L8.56609 8.01127C7.93538 7.65356 7.35272 7.21711 6.83212 6.71241C6.32742 6.19181 5.89097 5.60915 5.53326 4.97844L5.832 4.84206C6.11993 4.70108 6.34556 4.45859 6.46545 4.16126C6.58534 3.86393 6.59103 3.53276 6.48143 3.23148C6.37829 2.9516 6.29368 2.66523 6.22815 2.37424C6.19568 2.23136 6.1697 2.082 6.15022 1.93912C6.07136 1.48168 5.83176 1.06742 5.47457 0.770957C5.11738 0.474492 4.66608 0.315299 4.20194 0.322047H2.24716C1.97261 0.321688 1.70109 0.379358 1.45039 0.491278C1.19969 0.603197 0.975476 0.766839 0.792445 0.971475C0.605618 1.18166 0.466507 1.42981 0.384672 1.69886C0.302836 1.9679 0.280215 2.25148 0.318363 2.5301C0.671383 5.23311 1.90635 7.74413 3.83176 9.6738C5.76144 11.5992 8.27246 12.8342 10.9755 13.1872C11.0598 13.1936 11.1444 13.1936 11.2287 13.1872C11.7076 13.1879 12.17 13.0122 12.5276 12.6936C12.7322 12.5106 12.8959 12.2864 13.0078 12.0357C13.1197 11.785 13.1774 11.5135 13.177 11.2389V9.29064C13.1735 8.84191 13.0152 8.40814 12.7289 8.06263C12.4425 7.71712 12.0457 7.48105 11.6054 7.39431ZM11.9236 11.2909C11.9234 11.3815 11.9042 11.4711 11.8673 11.5538C11.8304 11.6366 11.7766 11.7107 11.7093 11.7715C11.6381 11.8363 11.5534 11.8845 11.4613 11.9126C11.3692 11.9407 11.272 11.9479 11.1768 11.9338C8.7533 11.6173 6.50107 10.5129 4.76694 8.79058C3.03133 7.05496 1.91727 4.79489 1.59773 2.36125C1.58363 2.266 1.59087 2.16881 1.61895 2.0767C1.64703 1.9846 1.69524 1.8999 1.76009 1.82872C1.82154 1.76063 1.89672 1.70632 1.98067 1.66939C2.06462 1.63245 2.15545 1.61371 2.24716 1.61441H4.19544C4.34557 1.61074 4.49232 1.65921 4.61073 1.75157C4.72914 1.84392 4.81188 1.97446 4.84487 2.12096C4.84487 2.29631 4.90332 2.47815 4.94229 2.65349C5.01734 2.9937 5.11719 3.32797 5.24102 3.65361L4.33182 4.08223C4.17555 4.15397 4.0541 4.28476 3.99412 4.44591C3.92917 4.60402 3.92917 4.78137 3.99412 4.93948C4.92878 6.9415 6.53809 8.55081 8.54011 9.48547C8.69822 9.55042 8.87557 9.55042 9.03368 9.48547C9.19483 9.42549 9.32562 9.30404 9.39736 9.14776L9.8065 8.23857C10.1415 8.36074 10.4843 8.46054 10.8326 8.5373C11.0014 8.57627 11.1833 8.60874 11.3586 8.63472C11.5051 8.66771 11.6357 8.75045 11.728 8.86886C11.8204 8.98727 11.8688 9.13402 11.8652 9.28414L11.9236 11.2909ZM8.09201 0.25061C7.94264 0.25061 7.78678 0.25061 7.63741 0.25061C7.46517 0.265251 7.3058 0.347713 7.19436 0.479856C7.08292 0.612 7.02854 0.783 7.04318 0.955239C7.05782 1.12748 7.14028 1.28685 7.27243 1.39829C7.40457 1.50972 7.57557 1.56411 7.74781 1.54946H8.09201C9.12544 1.54946 10.1165 1.95999 10.8473 2.69074C11.578 3.42149 11.9886 4.4126 11.9886 5.44603C11.9886 5.56293 11.9886 5.67333 11.9886 5.79023C11.9742 5.96155 12.0283 6.13159 12.1391 6.26307C12.2499 6.39455 12.4083 6.47674 12.5796 6.49161H12.6315C12.7941 6.49227 12.951 6.43192 13.0712 6.3225C13.1915 6.21308 13.2663 6.06254 13.2809 5.90063C13.2809 5.75126 13.2809 5.5954 13.2809 5.44603C13.2809 4.06924 12.7345 2.74875 11.7615 1.77461C10.7886 0.800464 9.46879 0.252331 8.09201 0.25061V0.25061ZM9.39086 5.44603C9.39086 5.61827 9.45928 5.78345 9.58107 5.90524C9.70287 6.02703 9.86805 6.09546 10.0403 6.09546C10.2125 6.09546 10.3777 6.02703 10.4995 5.90524C10.6213 5.78345 10.6897 5.61827 10.6897 5.44603C10.6897 4.75707 10.416 4.09634 9.92886 3.60917C9.4417 3.12201 8.78096 2.84832 8.09201 2.84832C7.91977 2.84832 7.75458 2.91674 7.63279 3.03853C7.511 3.16032 7.44258 3.32551 7.44258 3.49775C7.44258 3.66999 7.511 3.83517 7.63279 3.95696C7.75458 4.07875 7.91977 4.14717 8.09201 4.14717C8.43649 4.14717 8.76685 4.28402 9.01044 4.5276C9.25402 4.77118 9.39086 5.10155 9.39086 5.44603Z"
                     fill="#EB5E28"/>
               </svg>
-              <p class="text-[14px]">(+964) 780 119 1386</p>
+              <p class="text-[14px] lg:text-[16px]">(+964) 780 119 1386</p>
             </div>
             <div class="flex gap-4 items-center">
               <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +55,7 @@
                     d="M14.8334 0.333496H3.16669C2.50365 0.333496 1.86776 0.596888 1.39892 1.06573C0.930079 1.53457 0.666687 2.17045 0.666687 2.8335V11.1668C0.666687 11.8299 0.930079 12.4658 1.39892 12.9346C1.86776 13.4034 2.50365 13.6668 3.16669 13.6668H14.8334C15.4964 13.6668 16.1323 13.4034 16.6011 12.9346C17.07 12.4658 17.3334 11.8299 17.3334 11.1668V2.8335C17.3334 2.17045 17.07 1.53457 16.6011 1.06573C16.1323 0.596888 15.4964 0.333496 14.8334 0.333496V0.333496ZM3.16669 2.00016H14.8334C15.0544 2.00016 15.2663 2.08796 15.4226 2.24424C15.5789 2.40052 15.6667 2.61248 15.6667 2.8335L9.00002 6.90016L2.33335 2.8335C2.33335 2.61248 2.42115 2.40052 2.57743 2.24424C2.73371 2.08796 2.94567 2.00016 3.16669 2.00016V2.00016ZM15.6667 11.1668C15.6667 11.3878 15.5789 11.5998 15.4226 11.7561C15.2663 11.9124 15.0544 12.0002 14.8334 12.0002H3.16669C2.94567 12.0002 2.73371 11.9124 2.57743 11.7561C2.42115 11.5998 2.33335 11.3878 2.33335 11.1668V4.7335L8.56669 8.54183C8.69337 8.61497 8.83707 8.65347 8.98335 8.65347C9.12963 8.65347 9.27334 8.61497 9.40002 8.54183L15.6667 4.7335V11.1668Z"
                     fill="#EB5E28"/>
               </svg>
-              <p class="text-[14px]">iraqipchub@gmail.com</p>
+              <p class="text-[14px] lg:text-[16px]">iraqipchub@gmail.com</p>
             </div>
             <div class="flex gap-4 items-center">
               <svg width="18" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,10 +63,12 @@
                     d="M5.79314 5.95885C6.05002 5.95885 6.30114 5.88267 6.51474 5.73995C6.72834 5.59723 6.89481 5.39438 6.99312 5.15705C7.09143 4.91971 7.11715 4.65856 7.06703 4.4066C7.01692 4.15465 6.89321 3.92322 6.71156 3.74157C6.52992 3.55992 6.29848 3.43622 6.04653 3.3861C5.79458 3.33598 5.53342 3.3617 5.29609 3.46001C5.05875 3.55832 4.8559 3.7248 4.71318 3.93839C4.57046 4.15199 4.49428 4.40311 4.49428 4.66C4.49428 5.00447 4.63112 5.33484 4.87471 5.57843C5.11829 5.82201 5.44866 5.95885 5.79314 5.95885ZM5.33204 10.4464C5.39241 10.5073 5.46424 10.5556 5.54338 10.5885C5.62252 10.6215 5.7074 10.6385 5.79314 10.6385C5.87887 10.6385 5.96375 10.6215 6.04289 10.5885C6.12203 10.5556 6.19386 10.5073 6.25423 10.4464L8.91039 7.78374C9.52731 7.16714 9.94752 6.38142 10.1178 5.52598C10.2882 4.67054 10.201 3.78379 9.86731 2.97791C9.53362 2.17202 8.96843 1.4832 8.24322 0.998563C7.51802 0.513927 6.66537 0.255249 5.79314 0.255249C4.9209 0.255249 4.06825 0.513927 3.34305 0.998563C2.61784 1.4832 2.05265 2.17202 1.71897 2.97791C1.38528 3.78379 1.29809 4.67054 1.46842 5.52598C1.63876 6.38142 2.05896 7.16714 2.67588 7.78374L5.33204 10.4464ZM2.69537 4.36126C2.73974 3.89823 2.88696 3.45095 3.12628 3.05209C3.3656 2.65322 3.69097 2.31284 4.07865 2.05579C4.58793 1.7214 5.18388 1.54324 5.79314 1.54324C6.40239 1.54324 6.99834 1.7214 7.50762 2.05579C7.89271 2.31196 8.21624 2.65028 8.45496 3.04642C8.69368 3.44256 8.84165 3.88668 8.88822 4.34683C8.93479 4.80699 8.87882 5.27175 8.72432 5.70769C8.56982 6.14363 8.32064 6.53992 7.99469 6.86805L5.79314 9.06961L3.59158 6.86805C3.26525 6.5431 3.01549 6.14948 2.86046 5.71584C2.70542 5.2822 2.64903 4.81944 2.69537 4.36126V4.36126ZM10.3391 11.9336H1.24714C1.07491 11.9336 0.909721 12.002 0.78793 12.1238C0.666139 12.2456 0.597717 12.4108 0.597717 12.583C0.597717 12.7552 0.666139 12.9204 0.78793 13.0422C0.909721 13.164 1.07491 13.2324 1.24714 13.2324H10.3391C10.5114 13.2324 10.6766 13.164 10.7983 13.0422C10.9201 12.9204 10.9886 12.7552 10.9886 12.583C10.9886 12.4108 10.9201 12.2456 10.7983 12.1238C10.6766 12.002 10.5114 11.9336 10.3391 11.9336Z"
                     fill="#EB5E28"/>
               </svg>
-              <p class="text-[14px]">Al-Sinna St. Baghdad, Iraq</p>
+              <p class="text-[14px] lg:text-[16px]">Al-Sinna St. Baghdad, Iraq</p>
             </div>
           </div>
         </div>
+
+
         <div class="w-full self-center flex justify-center">
           <div class="w-full h-[2px] bg-[#EB5E28]"></div>
         </div>
@@ -93,7 +93,7 @@
           </svg>
         </div>
         <div class="self-end">
-          <p class="text-[10px] text-[#EB5E28]">2024 © pchub.LTD. All Rights reserved</p>
+          <p class="text-[10px] text-[#EB5E28] lg:text-[15px]">2024 © pchub.LTD. All Rights reserved</p>
         </div>
       </div>
     </div>
