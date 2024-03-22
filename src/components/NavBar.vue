@@ -20,8 +20,7 @@
       <div :class="{'w-full':isSM}" class="flex items-center cursor-pointer justify-self-start">
         <img class="w-10 sm:w-12" src="../assets/logo.svg" alt="">
         <h1 id="siteName" class="text-2xl sm:text-3xl ms-1 sm:ms-2"><span class="text-[#EB5E28]">PC</span>HUB</h1>
-        <!--the id is used to implement font but it didnt work for some reason go see https://fontsource.org/fonts/orbitron/install
-        check the main.js file and the style.css file.-->
+       
       </div>
       <div v-if="!isSM" class="max-[768px]:ml-8">
         <div class="flex justify-start rounded-lg relative">
