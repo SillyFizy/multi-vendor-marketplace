@@ -13,6 +13,14 @@
   </section>
   <section class="h-1/2 w-screen">
   </section>
+  <section class=" w-full h-[80vh] mt-5 flex justify-center" >
+    <div class=" h-[50%] flex flex-col items-center gap-4  w-[90%] md:flex-row md:justify-evenly p-5 ">
+      <img class="hover:scale-105 transition-all ease-in duration-200 w-3/4 md:w-2/4 lg:w-5/12 xl:w-2/6 " src="../assets/Vendor Registeration.svg" alt="">
+   
+     <img class="hover:scale-105 transition-all ease-in duration-200 w-3/4  md:w-2/4 lg:w-5/12 xl:w-2/6 " src="../assets/deals.svg" alt="">
+
+    </div>
+  </section>
 </template>
 
 <script setup>
