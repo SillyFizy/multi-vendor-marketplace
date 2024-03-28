@@ -1,4 +1,4 @@
-TUF GAMING B650-E WIFI<template>
+<template>
   <section>
     <Carousel
       :autoplay="5000"
@@ -18,9 +18,6 @@ TUF GAMING B650-E WIFI<template>
     </Carousel>
   </section>
   <section class="h-1/2 w-screen"></section>
-  <section class="w-screen">
-
-  </section>
   <section class="w-full h-[80vh] mt-5 flex justify-center">
     <div
       class="h-[50%] flex flex-col items-center gap-4 w-[90%] md:flex-row md:justify-evenly p-5"
@@ -45,6 +42,7 @@ import { Carousel, Pagination, Slide } from "vue3-carousel";
 import "vue3-carousel/dist/carousel.css";
 import { ref } from "vue";
 import ProductCard from "@/components/ProductCard.vue";
+import CatograyCard from "../components/CatograyCard.vue";
 const images = ref([
   { url: "/src/assets/slide-demo-1.jpg", alt: "HWC" },
   { url: "/src/assets/slide-demo-2.jpg", alt: "Some random shit" },
