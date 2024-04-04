@@ -21,14 +21,14 @@
     </div>
     <div class="bg-[#eb5e28] w-full h-[1px]"></div>
     <div class="flex flex-col w-full px-1">
-      <h1 class="text-gray-900 font-semibold text-sm">
+      <h1 class="text-gray-900 font-semibold text-sm text-start ps-[2px]">
         {{ productName }}
       </h1>
-      <p v-if="inStock" class="text-[#178B30] text-sm font-semibold">
+      <p v-if="inStock" class="text-[#178B30] text-sm font-semibold text-start ps-[2px]">
         In Stock
       </p>
       <p v-else class="text-red-500 font-semibold my-1">Out of Stock</p>
-      <p class="text-[#EB5E28] text-md font-semibold">{{ price }} IQD</p>
+      <p class="text-[#EB5E28] text-md font-semibold text-start ps-[2px]">{{ price }} IQD</p>
     </div>
   </div>
 </template>
